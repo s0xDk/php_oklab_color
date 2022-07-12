@@ -8,14 +8,14 @@
 ## API
 ```php
 // Oklab
-OklabColor::oklab_to_linear_srgb(float $L, float $a, float $b): array // [float $r, float $g, float $b]
-OklabColor::linear_srgb_to_oklab(float $r, float $g, float $b): array // [float $L, float $a, float $b]
+Oklab\OkColor::oklab_to_linear_srgb(float $L, float $a, float $b): array // [float $r, float $g, float $b]
+Oklab\OkColor::linear_srgb_to_oklab(float $r, float $g, float $b): array // [float $L, float $a, float $b]
 
 // Okhsl
-OklabColor::okhsl_to_srgb(float $h, float $s, float $l): array // [float $r, float $g, float $b]
-OklabColor::srgb_to_okhsl(float $r, float $g, float $b): array // [float $h, float $s, float $l]
+Oklab\OkColor::okhsl_to_srgb(float $h, float $s, float $l): array // [float $r, float $g, float $b]
+Oklab\OkColor::srgb_to_okhsl(float $r, float $g, float $b): array // [float $h, float $s, float $l]
 
 // Okhsv
-OklabColor::okhsv_to_srgb(float $h, float $s, float $v): array // [float $r, float $g, float $b]
-OklabColor::srgb_to_okhsv(float $r, float $g, float $b): array // [float $h, float $s, float $v]
+Oklab\OkColor::okhsv_to_srgb(float $h, float $s, float $v): array // [float $r, float $g, float $b]
+Oklab\OkColor::srgb_to_okhsv(float $r, float $g, float $b): array // [float $h, float $s, float $v]
 ```
