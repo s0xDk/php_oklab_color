@@ -1,0 +1,12 @@
+{
+    "name": "s13k/php_oklab_color",
+    "description": "Oklab, Okhsv and Okhsl — PHP8 implementation",
+    "keywords": ["Oklab", "Okhsv", "Okhsl", "color"],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Oklab\\": "src/Oklab"
+        }
+    }
+}
