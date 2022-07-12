@@ -2,6 +2,9 @@
 - [A perceptual color space for image processing](https://bottosson.github.io/posts/oklab/)
 - [Okhsv and Okhsl — Two new color spaces for color picking](https://bottosson.github.io/posts/colorpicker/)
 
+## Install
+`composer require s13k/php_oklab_color`
+
 ## API
 ```php
 // Oklab
