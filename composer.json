@@ -1,5 +1,6 @@
 {
     "name": "s13k/php_oklab_color",
+    "version": "1.0.0",
     "description": "Oklab, Okhsv and Okhsl — PHP8 implementation",
     "keywords": ["Oklab", "Okhsv", "Okhsl", "color"],
     "type": "library",
