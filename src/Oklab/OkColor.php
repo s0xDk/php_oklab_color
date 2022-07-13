@@ -142,7 +142,7 @@ class OkColor
 		$L_cusp = (1 / max(max($rgb_at_max[0], $rgb_at_max[1]), $rgb_at_max[2])) ** (1 / 3);
 		$C_cusp = $L_cusp * $S_cusp;
 
-		return [$L_cusp, $C_cusp];
+		return [ $L_cusp, $C_cusp ];
 	}
 
 	// Finds intersection of the line defined by
@@ -374,7 +374,7 @@ class OkColor
 	{
 		$L = $cusp[0];
 		$C = $cusp[1];
-		return [ 'S' => $C / $L, 'T' => $C / (1 - $L) ];
+		return [ $C / $L, $C / (1 - $L) ];
 	}
 
 	// Returns a smooth approximation of the location of the cusp
@@ -398,7 +398,7 @@ class OkColor
 						)))
 			);
 
-		return [$S, $T];
+		return [ $S, $T ];
 	}
 
 	private static function get_Cs(float $L, float $a_, float $b_): array
@@ -431,7 +431,7 @@ class OkColor
 			$C_0 = sqrt(1 / (1 / ($C_a * $C_a) + 1 / ($C_b * $C_b)));
 		}
 
-		return [$C_0, $C_mid, $C_max];
+		return [ $C_0, $C_mid, $C_max ];
 	}
 
 	public static function okhsl_to_srgb(float $h, float $s, float $l): array
@@ -529,7 +529,7 @@ class OkColor
 		}
 
 		$l = self::toe($L);
-		return [$h, $s, $l];
+		return [ $h, $s, $l ];
 	}
 
 	public static function okhsv_to_srgb(float $h, float $s, float $v): array
@@ -621,7 +621,7 @@ class OkColor
 		$v = $L / $L_v;
 		$s = ($S_0 + $T_max) * $C_v / (($T_max * $S_0) + $T_max * $k * $C_v);
 
-		return [$h, $s, $v];
+		return [ $h, $s, $v ];
 	}
 
 }
